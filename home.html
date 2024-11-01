@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Home | MAA AMC 10 Mock</title>
+
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
+
+    <script defer src="./js/navbar.js"></script>
+  </head>
+
+  <body>
+    <!-- outer container div (background image) -->
+    <div id="banner">
+      <!-- navbar buttons -->
+      <div id="navbar"></div>
+
+      <!-- title -->
+      <div class="center titletext">
+        <h1>MAA AMC 10 Mock Site</h1>
+      </div>
+    </div>
+
+    <div class="body">
+      <p>
+        The purpose of this site is to provide a resource for training for the
+        AMC 10 by solving problems on a realistic testing interface similar to
+        the contest.
+      </p>
+      <p>
+        In the spirit of being as realistic as possible to the real contest, you
+        <b>cannot</b> pause or exit the test and come back later; the problem
+        set you chose must be completed in block.
+      </p>
+      <p>To get started, pick a problem set below.</p>
+      <div class="center">
+        <!-- <a href="./problems.html" class="button">Select a Problem Set</a> -->
+        <button
+          class="button"
+          onclick="
+            setTimeout((function() {
+              location.href = './problems.html';
+            }), 200);
+          "
+        >
+          Select a Problem Set
+        </button>
+      </div>
+      <h1>About the AMC 10</h1>
+      <p>
+        The AMC 10, administered by the Mathematical Association of America
+        (MAA) is a 25-question, 75-minute multiple-choice exam focused on
+        utilizing high school mathematics up to 10th grade level to solve
+        problems centered around demonstrating strong problem-solving and
+        critial thinking skills.
+      </p>
+      <p>
+        The AMC 10 is the gateway exam to farther mathematical opportunities,
+        the most immediate being the American Invitational Mathematics
+        Examination (AIME). Around the top 6% scorers of the AMC 10 are invited
+        to take the AIME. Good scoring in both the AMC 10 and AIME leads to the
+        qualification for the prestigious United States of America Junior
+        Mathematics Olympiad (USAJMO), which opens one's path to many more
+        mathematical opportunities in competition.
+      </p>
+      <p>
+        More information about the AMC 10 can be found
+        <a
+          href="https://artofproblemsolving.com/wiki/index.php/AMC_10"
+          target="_blank"
+          rel="noopener noreferrer"
+          >here</a
+        >.
+      </p>
+
+      <img
+        src="./images/maa_logo.png"
+        alt="Logo of the Mathematical Association of America (MAA)"
+        class="relcenter"
+        style="width: 240px; margin-top: 40px"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Exam | MAA AMC 10 Mock</title>
+
+    <link rel="stylesheet" href="./css/core.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
+    <link rel="stylesheet" href="./css/exam.css" />
+
+    <script defer src="./js/exam.js"></script>
+  </head>
+
+  <body>
+    <!-- do smth -->
+    <div id="topbar">
+      <div id="prev_button"><button onclick="prev();">PREV</button></div>
+      <div id="timer"></div>
+      <div id="next_button"><button onclick="next();">NEXT</button></div>
+    </div>
+    <div id="problem_container" class="body">
+      <h1 align="center">Note:</h1>
+      <p>
+        You will have <b>75 minutes</b> to complete the exam and may
+        <i>not</i> pause the exam. Leaving the page will return you to the
+        homepage. Calculators should not be used.
+      </p>
+      <p>
+        More information on exam rules and details can be found on the main
+        site.
+      </p>
+      <p>
+        Click the 'NEXT' button on the top right to move to the next problem,
+        and the 'PREV' button to move back a problem. The exam can be submitted
+        early by navigating to problem 25, and will be automatically submitted
+        once the time runs out.
+      </p>
+      <p>Click the button below to begin the exam. Good luck!</p>
+
+      <div class="center" style="margin-top: 50px">
+        <button class="button" onclick="setTimeout(startExam, 200);">
+          Start the Exam
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

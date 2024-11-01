@@ -1,0 +1,86 @@
+/* universal styles */
+
+:root {
+    --darkblue: #21355a;
+    --lighblue: #f7faff;
+}
+
+body {
+    background-color: var(--lightblue);
+    font-family: georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20vh;
+
+    /* always show the scroll bar so the navbar
+     * width doesn't change when navigating */
+    overflow-y: scroll;
+}
+
+button {
+    font-weight: bold;
+    font-family: georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--darkblue);
+}
+
+/* generic center */
+
+.relcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* center div */
+div.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* body text */
+div.body {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+div.body p {
+    font-size: 18px;
+}
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    margin-top: 50px;
+}
+
+/* title text */
+
+div.titletext h1 {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 300%;
+}
+
+div.titletext {
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* remove visited link color from tables */
+
+th a:visited,
+td a:visited {
+    color: #0000ee;
+}

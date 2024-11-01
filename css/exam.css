@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/* top bar */
+
+#topbar {
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+
+    overflow: hidden;
+    background-color: var(--darkblue);
+}
+
+/* top timer */
+
+#timer {
+    text-align: center;
+    width: 50%;
+}
+
+#timer span {
+    color: white;
+    font-weight: bold;
+}
+
+/* problem container */
+
+#problem_container {
+    margin-top: 180px;
+    padding-bottom: 20vh;
+}
+
+/* change problem buttons */
+
+#prev_button,
+#next_button {
+    text-align: center;
+    width: 25%;
+}
+
+#prev_button button,
+#next_button button {
+    padding: 10px 30px;
+    color: var(--darkblue);
+}
+
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+/* button */
+
+.button {
+    text-align: center;
+    background-color: var(--darkblue);
+    padding: 20px;
+    border-radius: 20px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* table style */
+
+table.center {
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.normal,
+table.normal th,
+table.normal td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.normal th,
+table.normal td {
+    padding: 0.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+}
+
+table.normal th {
+    background: #cccccc;
+}
+
+/* IDs */
+
+#cutoff_ansichart td {
+    padding-left: 2em;
+    white-space: nowrap;
+}
